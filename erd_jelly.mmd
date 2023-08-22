@@ -1,8 +1,14 @@
 erDiagram
 
-    USER ||--|| LOGIN_EMAIL : has
-    USER ||--|| LOGIN_PASSWORD : has
-    USER ||--o{ ROUNDS : plays_n
+    User {
+        string screen_name
+        string email
+        string password
+        integer wins 
+    }
 
-    HIGH_SCORE ||--|| USER: held_by_highest_scoring
+    GridGame {
+        integer score
+    }
 
+    User ||--o{ GridGame : "has many"
