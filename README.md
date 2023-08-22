@@ -6,7 +6,7 @@ Jelly's Game Play Area takes up most of the viewer's browser window. Riding Bert
 During game play, one question or challenge at a time is displayed near the top of the screen, in the Instruction Area. Corresponding answer choice options are displayed on the Game Board. At least one answer on the Game Board is correct; there may be more than one correct answer, as well as incorrect answers. 
 ![alt text](https://lh3.googleusercontent.com/pw/AIL4fc8SXDGOUa-ZZ8Gp5XyzpSPOtw-tyvYSMBdTxyEzuC-4bDs6kkRHMYJdqocfOjnWAchD_jywXZ0aQjdfkojJA4vZ6Wz6NDJ6UW7I5RVnbOqp__Eoh8_hh-EFtpsIrwL3k_9at0l4mGVf4MYEC0cld8GrZA=w1034-h770-s-no?authuser=0 "Jelly Mock")
 ### Choosing an Answer
-Players navigate to the Game Board square containing their answer of choice, pressing the "spacebar" to submit that answer as a solution to the question. If the answer is correct, Bert celebrates with a scream of fire, stamping the square with the explosion emoji: 💥. But beware: incorrect solutions are marked with the snowflake emoji: ❄️, marking the space on behalf of the Evil Snow Snail. 
+Players navigate to the Game Board square containing their answer of choice, pressing the "spacebar" to submit that answer as a solution to the question. If the answer is correct, Bert celebrates with a scream of fire, stamping the square with the explosion emoji: 💥. But beware: incorrect solutions are marked with the snowflake emoji: ❄️, marking the space on behalf of the Evil Snow Snail.  
 
 It resembles a tic-tac-toe board and winning a  game entails achieving three marked squares in a row, column, or diagonal. 
 
