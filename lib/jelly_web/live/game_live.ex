@@ -23,9 +23,9 @@ defmodule JellyWeb.GameLive do
 
   def render(assigns) do
     ~H"""
-    <h1>Instructions</h1>
+    <h1 class="text-center">Instructions:</h1>
 
-    <div class="grid grid-cols-3 w-5/6 mx-auto">
+    <div class="grid grid-cols-3 w-5/6 mx-auto text-center">
       <%= for row <- @game_board do %>
         <%= for cell <- row do %>
           <div class="bg-red-500 aspect-square border-black border-dotted border-2">
