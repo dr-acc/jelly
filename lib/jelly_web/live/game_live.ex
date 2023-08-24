@@ -16,24 +16,32 @@ defmodule JellyWeb.GameLive do
       [%{choice: "maybe"}, %{choice: "grr"}, %{choice: ":false"}]
     ]
 
-    socket = assign(socket, :game_board, game_board)
+    new_socket =
+      socket
+      |> assign(:game_board, game_board)
+      |> assign(:challenge, challenge1)
 
-    {:ok, socket}
+
+    {:ok, new_socket}
   end
 
   def render(assigns) do
     ~H"""
-    <h1 class="text-center">Instructions:</h1>
 
-    <div class="grid grid-cols-3 w-5/6 mx-auto text-center">
+    <h1 class="text-center">Instructions:</h1>
+      <p class="text-center"><%= @challenge.instruction %></p>
+    <div class="flex flex-col items-center mx-auto bg-red-500">
+    <.button >PLAY!</.button>
+    <div class="grid grid-cols-3 w-5/6 mx-auto text-center bg-board">
       <%= for row <- @game_board do %>
         <%= for cell <- row do %>
-          <div class="bg-red-500 aspect-square border-black border-dotted border-2">
+          <div class="aspect-square border-black border-dotted border-2">
           <%= cell.choice %>
           </div>
         <% end %>
       <% end %>
 
+      </div>
     </div>
     """
   end

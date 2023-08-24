@@ -15,6 +15,9 @@ module.exports = {
     extend: {
       colors: {
         brand: "#FD4F00",
+        black_ground: "#0B032D",
+        board: "#7D70BA",
+        tea_green: "#DAFFAF"
       }
     },
   },
