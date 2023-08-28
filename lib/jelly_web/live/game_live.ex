@@ -11,9 +11,10 @@ defmodule JellyWeb.GameLive do
     }
 
     game_board = [
-      [%{choice: ":yum"}, %{choice: "true"}, %{choice: ":\"has spaces\""}],
-      [%{choice: "hi"}, %{choice: "3"}, %{choice: "9"}],
-      [%{choice: "maybe"}, %{choice: "grr"}, %{choice: ":false"}]
+      [%{Enum.take_random(challenge1.correct, 3)}]
+      # [%{choice: ":yum"}, %{choice: "true"}, %{choice: ":\"has spaces\""}],
+      # [%{choice: "hi"}, %{choice: "3"}, %{choice: "9"}],
+      # [%{choice: "maybe"}, %{choice: "grr"}, %{choice: ":false"}]
     ]
 
     new_socket =
